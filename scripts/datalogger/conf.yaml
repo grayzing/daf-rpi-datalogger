@@ -2,7 +2,7 @@ sensors:
   sensor_periodicity_s: 1800 # 20 minutes
   buffer_maxlen: 20000 # records
   sensor_sdi12_addresses: [1,4]
-  buffer_csv_path: "~/Projects/daf-rpi-datalogger/scripts/datalogger/soil_kpis.csv"
+  buffer_csv_path: "/home/gray/Projects/daf-rpi-datalogger/scripts/datalogger/soil_kpis.csv"
 
 networking:
   snr_tx_threshold: 2.0 # SNR needs to be \geq this qty to attempt transmission
