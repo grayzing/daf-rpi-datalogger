@@ -75,6 +75,7 @@ print("[green]Starting measurement accumulation loop...[/green]")
 
 while True:
     for address in sensor_addresses:
+        time.sleep(1)
         m_command = f"{address}M!".encode('utf-8')
         ser.write(m_command)
         

@@ -1,0 +1,17 @@
+[Unit]
+Description=DAF RPi Datalogger Accumulation Service
+After=network.target time-sync.target
+
+[Service]
+Type=simple
+User=jpark
+WorkingDirectory=/home/jpark/Projects/daf-rpi-datalogger/scripts/datalogger
+ExecStartPre=/bin/sleep 5
+ExecStart=/home/jpark/Projects/daf-rpi-datalogger/scripts/datalogger/bin/python3 datalogger_accumulation.py
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

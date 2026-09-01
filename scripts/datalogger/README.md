@@ -11,8 +11,8 @@ git clone https://github.com/grayzing/daf-rpi-datalogger.git
 cd daf-rpi-datalogger/scripts/datalogger
 ```
 
-then you'll install all the requirements,
+then you simply run the script to set up the accumulation service
 
 ```bash
-pip install -r requirements.txt
+bash setup.sh
 ```
